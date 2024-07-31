@@ -39,6 +39,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  padding-left: 30px;
 }
 
 .groupAd .empty {
@@ -76,23 +77,28 @@
     gap: 20px;
     /* row-gap: 20px; */
     display: inline-grid;
-    padding-right: 30px;
+    /* padding-right: 30px; */
+}
+
+@media (max-width: 800px) {
+  .groupAd {padding: 0;margin: 30px 0;}
+  .groupLessons {display: block;}
 }
 
 @media (max-width: 1300px) {
-    .groupLessons {
+    .groupVideoLessons {
       grid-template-columns: repeat(3, 1fr);
     }
   }
   
   @media (max-width: 980px) {
-    .groupLessons {
+    .groupVideoLessons {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   
   @media (max-width: 660px) {
-    .groupLessons {
+    .groupVideoLessons {
       grid-template-columns: repeat(1, 1fr);
     }
   }

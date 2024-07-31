@@ -5,6 +5,7 @@ import { headers } from "next/headers";
 import Translations from "./_components/Translations";
 import AdHeader from "./_components/AdHeader";
 import Script from "next/script";
+import Hamburger from "./_components/Hamburger";
 
 const noto = Noto_Sans({ variable: [400, 500, 600, 700, 800, 900], subsets: ["latin"] })
 
@@ -46,6 +47,8 @@ export default async function RootLayout({ children }) {
               <Script id="banner-ad">{`(adsbygoogle = window.adsbygoogle || []).push({ });`}</Script> */}
             </div>
           </div>
+
+          <Hamburger />
         </header>
 
         <div className="nav">
@@ -65,7 +68,7 @@ export default async function RootLayout({ children }) {
         {children}
 
         <footer>
-          <img src="/london.svg" alt="English Flow - London" />
+          {/* <img src="/london.svg" alt="English Flow - London" /> */}
           <div className="footer-inner">
             <h4>English Flow</h4>
             <div className={"footer-links"}>

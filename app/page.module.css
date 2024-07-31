@@ -40,15 +40,38 @@
   z-index: 1;
 }
 .inner img {
-  height: 300px;
+  /* height: 300px; */
   border-radius: 10px;
   display: block;
   margin: 0 auto 25px auto;
+  max-width: 100%;
+  height: auto;
 }
 .types {
   display: flex;
   justify-content: space-between;
   padding: 40px 0;
+}
+.headlineTwo {
+  margin-top: 120px;
+}
+@media (max-width: 800px) { 
+  .translations {
+    display: block!important;
+    padding: 15px;
+  }
+  .headlineTwo {
+    margin-top: 20px;
+  }
+  .types {
+    display: block;
+  }
+  .type {
+    margin-bottom: 50px;
+  }
+  .hero {
+    padding: 0;
+  }
 }
 .type {
   text-align: center;

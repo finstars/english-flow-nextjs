@@ -11,6 +11,7 @@
     position: relative;
     max-width: 80%;
     text-align: center;
+    min-height: 400px;
 }
 
 .content h1 {
@@ -35,7 +36,7 @@
     background: #fff;
     border-radius: 5px;
     padding: 2em 0;
-    height: 440px;
+    /* height: 440px; */
     box-sizing: border-box;
     transition: 0.3s ease;
     box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.35);
@@ -78,6 +79,7 @@
 }
 
 .title {
+    margin-bottom: 15px;
     font-size: 12px;
     background: #f0b624;
     color: #000;

@@ -123,6 +123,44 @@ header {
   justify-content: space-between;
 }
 
+@media (max-width: 800px) {
+  .logo-ad {display: block;}
+  .logo {
+    /* margin: 10px auto 20px auto;
+    display: table!important;
+    text-align: center; */
+  }
+  header {
+    border-bottom: 1px solid #d6d6d6;
+  }
+  .nav {
+    height: 0;
+    min-height: 0!important;
+    visibility: hidden;
+  }
+  .logo-ad .ad {
+    display: none;
+  }
+  .nav-links {
+    display: block!important;
+  }
+  .nav-links a {
+    display: block;
+    text-align: center;
+    margin: auto!important;
+  }
+  .nav-links select {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 25px!important;
+    margin-top: 15px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+}
+
 .logo-ad .logo {
   display: flex;
   align-items: center;
@@ -158,6 +196,7 @@ header {
   /* background: url(/ad-horizontal.png); */
   background-position: center;
   background-size: cover;
+  max-width: 100%;
 }
 
 .nav {
@@ -295,8 +334,6 @@ footer>img {
   line-height: 22px;
 }
 
-@media (max-width: 1380px) {}
-
 .modal-header {
   position: absolute;
   top: 0;
@@ -374,4 +411,10 @@ footer>img {
     font-size: 150%;
     margin: 0 0 15px;
   }
+}
+
+.hamburger .nav {
+  height: auto;
+  visibility: visible;
+  padding: 20px 0;
 }

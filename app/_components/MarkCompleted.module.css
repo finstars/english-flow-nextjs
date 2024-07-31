@@ -21,6 +21,13 @@
     font-weight: bold;
   }
 
+  @media (max-width: 800px) {
+    .completed, 
+    .markAsCompleted {
+        padding: 10px;
+    }
+  }
+
   .completed {
     /* color: #fff */
   }

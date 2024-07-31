@@ -119,3 +119,17 @@
 .back svg {
   transform: rotateY(180deg);
 }
+@media (max-width: 800px) {
+  .lessonAds {display: block;padding-top: 0;padding-bottom: 0;}
+  .lesson {
+    padding: 0!important;
+    margin: 10px 0!important;
+  }
+  .lessonAd {display: none;}
+  .intro {
+    margin-top: 60px;
+  }
+  .goBack {
+    padding: 10px;
+  }
+}

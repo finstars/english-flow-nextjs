@@ -3,6 +3,8 @@
     /* height: 250px; */
     /* background: #000; */
     max-height: 300px;
+    min-width: 300px;
+    min-height: 300px;
     background-position: center;
     background-size: cover;
     background-position: left;
