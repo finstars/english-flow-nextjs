@@ -4,13 +4,13 @@ import React, { useState, useEffect } from "react";
 import styles from "./LessonCard.module.css"
 import Link from "next/link";
 
-const LessonCard = ({ card, isLast }) => {
+const LessonCard = ({ card, width }) => {
   const [translation, setTranslation] = useState("")
 
   useEffect(() => {
     const locale = window.localStorage.getItem("locale")
 
-    if (card.translations[locale]) {
+    if (locale && card.translations[locale]) {
       setTranslation(card.translations[locale])
     }
   }, [])
@@ -25,7 +25,7 @@ const LessonCard = ({ card, isLast }) => {
           <p>{translation}</p>
         </div>
         <div className={styles.progressContainer}>
-          <div className={styles.step}></div>
+          <div className={styles.step} style={{ width }}></div>
         </div>
       </div>
     </div>

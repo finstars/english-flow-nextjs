@@ -5,7 +5,8 @@ import { headers } from "next/headers";
 import Translations from "./_components/Translations";
 
 const noto = Noto_Sans({ variable: [400, 500, 600, 700, 800, 900], subsets: ["latin"] })
-// const inter = Inter({ subsets: ["latin"] });
+
+export const revalidate = 3600
 
 export const metadata = {
   title: "English Flow",

@@ -1,9 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import editions from "./editions";
 import Edition from "../_components/Edition";
+import { storageUrl } from "../_utils/constants";
 
-export default function Home() {
+export default async function Home() {
+  const { edition } = await getData()
+
   return (
     <main id="main" className={styles.main}>
       <div className={styles.intro}>
@@ -13,10 +15,20 @@ export default function Home() {
       </div>
 
       <div className={styles.videoLessons}>
-        {editions.map(({ title, lessons }, i) => (
+        {edition.map(({ title, lessons }, i) => (
           <Edition title={title} lessons={lessons} key={i} />
         ))}
       </div>
     </main>
   );
+}
+
+async function getData() {
+  const res = await fetch(`${storageUrl}/editions/shadowing.json`)
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch data')
+  }
+
+  return res.json()
 }

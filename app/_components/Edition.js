@@ -6,8 +6,15 @@ import styles from "./Edition.module.css"
 
 const Edition = ({ title, lessons }) => {
   const [collapsed, setCollapsed] = useState(false)
-  
-  const locale = useRef(localStorage.getItem('locale')).current || "English"
+  const [locale, setLocale] = useState(null)
+
+  useEffect(() => {
+    const localLocale = window.localStorage.getItem('locale')
+
+    if (localLocale) {
+      setLocale(localLocale)
+    }
+  }, [])
 
   return (
     <div className={styles.group}>
