@@ -5,7 +5,6 @@ import { headers } from "next/headers";
 import Translations from "./_components/Translations";
 import AdHeader from "./_components/AdHeader";
 import Script from "next/script";
-import Head from "next/head";
 
 const noto = Noto_Sans({ variable: [400, 500, 600, 700, 800, 900], subsets: ["latin"] })
 
@@ -22,9 +21,6 @@ export default async function RootLayout({ children }) {
 
   return (
     <html lang={"en"}>
-      <Head>
-        <Script async crossOrigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4920440112171788" />
-      </Head>
       <body className={noto.className}>
         {/* <GoogleAdSense publisherId="pub-4920440112171788" /> */}
 
