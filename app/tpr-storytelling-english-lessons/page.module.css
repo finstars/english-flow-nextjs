@@ -1,0 +1,348 @@
+.main {
+  max-width: 100%;
+  width: 1300px;
+  margin: auto;
+  padding: 20px;
+}
+
+.crest {
+  max-width: 100%;
+  width: 1260px;
+  margin: auto;
+  display: flex;
+}
+
+.crestSquare {
+  border-left: 2px solid #0b0c0c;
+  padding: 0 20px 0 20px;
+}
+
+.crestLogo {
+  width: 32px;
+  height: 32px;
+}
+
+.crestTitle {
+  font-weight: 500;
+  color: #0b0c0c;
+  text-decoration: underline;
+  text-decoration-thickness: max(1px, .0625rem);
+  text-underline-offset: .1578em;
+}
+
+.heroBanner {
+  background: #242424;
+  margin: 5px 0 25px 0;
+  padding: 20px;
+  color: #fff;
+}
+
+.heroTitle {
+  margin-bottom: 5px;
+}
+
+.heroSubtitle {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.heroDescription {
+  max-width: 75%;
+  font-weight: 400;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+.tabs {
+  display: flex;
+  gap: 15px;
+  margin: 5px 0 0 0;
+}
+
+.tab {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 0;
+  border: none;
+  background: #e8e8e8;
+  color: #0b0c0c;
+  cursor: pointer;
+}
+
+.tabActive {
+  color: #fff;
+  background: #242424;
+  font-weight: 700;
+}
+
+.tabDetails {
+  padding: 30px 0 20px 0;
+}
+
+.tabDetailsHeadline {
+  margin-bottom: 10px;
+}
+
+.tabDetailsList {
+  padding: 10px 30px;
+}
+
+.tabDetailsListItem {
+  padding: 5px 0;
+}
+
+.videoLessons {
+  padding: 0 0 20px 0;
+}
+
+.group {
+  padding: 40px 0 20px 0;
+  color: #0b0c0c;
+  max-width: 1300px;
+}
+
+.group:first-of-type {
+  padding-top: 10px;
+}
+
+.groupDetails {
+  /* background: #e8e8e8;
+  padding: 20px;
+  margin-bottom: 30px; */
+}
+
+.groupTitle {
+  font-size: 16px;
+  margin: 5px 0 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 10px;
+  /* color: #7a7a7a; */
+  font-weight: 500;
+}
+
+.groupTitle span {
+  background: #0b0c0c;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  vertical-align: top;
+  margin-left: 10px;
+  position: relative;
+  bottom: -4px;
+}
+
+.groupDescription {
+  max-width: 600px;
+  color: #0b0c0c;
+}
+
+.groupLessons {
+  /* margin-top: 25px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.groupVideoLessons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  /* row-gap: 20px; */
+  display: inline-grid;
+  padding-right: 30px;
+}
+
+.groupLesson {
+  /* width: 300px; */
+  /* height: 250px; */
+  background: #d3d3d3;
+  background-position: center;
+  background-size: cover;
+  background-position: left;
+  position: relative;
+  font-weight: bold;
+  font-size: 28px;
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lessonCompleted {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: auto;
+  background: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  gap: 5px;
+  padding: 2px 5px;
+  color: #0b0c0c
+}
+
+.lessonCompleted svg {
+  height: 16px;
+  width: 16px;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.oneSlide {
+  display: flex!important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 70px;
+  text-align: center;
+  height: 100%;
+}
+.slideMain {
+  flex: 1;
+  padding: 60px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+.slideSubmain {
+  height: 50%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  font-size: 14px;
+  opacity: 0.6;
+}
+.slideBottom {
+  height: 100px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.slidePlay {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #37a438;
+  cursor: pointer;
+  position: absolute;
+  bottom: 30px;
+  display: table;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.ad1 {
+  background: url(/ad-example-square.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.ad2 {
+  background: url(/ad-example-square2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.lightning {
+  display: flex;
+  position: relative;
+  margin: 4vmin;
+  filter: var(--svgfilter);
+}
+
+.lightning span {
+  letter-spacing: 1px;
+  /* font-size: 1rem; */
+  margin-right: -1rem;
+  text-shadow: none;
+}
+
+.lightning>* {
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: calc(var(--size)* 0.8vmin) calc(var(--size)* 1.6vmin);
+  background: rgba(0, 0, 0, 0.5);
+  transform: skew(calc(var(--skew)* -1deg), calc(var(--skew)* -1deg));
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: right;
+  /* border: 3px solid var(--boxshadow); */
+  border-left: 0;
+  /* text-shadow: var(--textshadow) 0px 0px 0px,
+    var(--textshadow) 0.669131px 0.743145px 0px,
+    var(--textshadow) 1.33826px 1.48629px 0px,
+    var(--textshadow) 2.00739px 2.22943px 0px,
+    var(--textshadow) 2.67652px 2.97258px 0px,
+    var(--textshadow) 3.34565px 3.71572px 0px,
+    var(--textshadow) 4.01478px 4.45887px 0px,
+    var(--textshadow) 4.68391px 5.20201px 0px;
+  box-shadow: var(--border) 0px 0px 0px,
+    var(--boxshadow) 0.819152px 0.573576px 0px,
+    var(--boxshadow) 1.6383px 1.14715px 0px,
+    var(--boxshadow) 2.45746px 1.72073px 0px,
+    var(--boxshadow) 3.27661px 2.29431px 0px,
+    var(--boxshadow) 4.09576px 2.86788px 0px,
+    var(--boxshadow) 4.91491px 3.44146px 0px,
+    var(--boxshadow) 5.73406px 4.01504px 0px,
+    var(--boxshadow) 6.55322px 4.58861px 0px,
+    var(--boxshadow) 7.37237px 5.16219px 0px,
+    var(--boxshadow) 8.19152px 5.73576px 0px,
+    var(--boxshadow) 9.01067px 6.30934px 0px,
+    var(--boxshadow) 9.82982px 6.88292px 0px,
+    var(--boxshadow) 10.649px 7.45649px 0px,
+    var(--boxshadow) 11.4681px 8.03007px 0px; */
+
+  &:last-child {
+    left: calc(var(--size) * -1vmin);
+    position: relative;
+    text-align: left;
+    /* span {
+        border-top: 1px solid;
+      } */
+  }
+}
+
+.noisy {
+  background-image: var(--noise-image);
+}
+
+@media (max-width: 1300px) {
+  .groupLessons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 980px) {
+  .groupLessons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 660px) {
+  .groupLessons {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

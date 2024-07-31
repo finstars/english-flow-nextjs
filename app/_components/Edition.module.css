@@ -1,0 +1,85 @@
+.group {
+    padding: 40px 0 20px 0;
+    color: #0b0c0c;
+    max-width: 1300px;
+}
+
+.group:first-of-type {
+    padding-top: 10px;
+}
+
+.groupDetails {
+    /* background: #e8e8e8;
+    padding: 20px;
+    margin-bottom: 30px; */
+}
+
+.groupTitle {
+    font-size: 14px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #f2f2f2;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: inherit;
+    font-weight: 500;
+    background: #f6f6f6;
+    padding: 7px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.groupTitle svg {
+    height: 15px;
+    width: 15px;
+}
+
+.groupTitle span {
+    background: #0b0c0c;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    vertical-align: top;
+    margin-left: 10px;
+    position: relative;
+    bottom: -4px;
+}
+
+.groupDescription {
+    max-width: 600px;
+    color: #0b0c0c;
+}
+
+.groupLessons {
+    /* margin-top: 25px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.groupVideoLessons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* row-gap: 20px; */
+    display: inline-grid;
+    padding-right: 30px;
+}
+
+@media (max-width: 1300px) {
+    .groupLessons {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 980px) {
+    .groupLessons {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 660px) {
+    .groupLessons {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

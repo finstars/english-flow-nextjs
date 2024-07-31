@@ -1,0 +1,124 @@
+.groupLesson {
+    /* width: 300px; */
+    /* height: 250px; */
+    /* background: #000; */
+    max-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-position: left;
+    position: relative;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.groupLesson:hover {
+    opacity: 0.8
+}
+
+.lessonCompleted {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    gap: 5px;
+    padding: 2px 5px;
+    color: #0b0c0c;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+}
+
+.lessonCompleted svg {
+    height: 16px;
+    width: 16px;
+}
+
+.translation {
+    position: absolute;
+    bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.lightning {
+    display: flex;
+    position: relative;
+    margin: 4vmin;
+    filter: var(--svgfilter);
+}
+
+.lightning span {
+    letter-spacing: 1px;
+    /* font-size: 1rem; */
+    margin-right: -1.2rem;
+    text-shadow: none;
+}
+
+.lightning>* {
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: calc(var(--size)* 0.8vmin) calc(var(--size)* 1.6vmin);
+    background: #0b0c0c;
+    /* transform: skew(calc(var(--skew)* -1deg), calc(var(--skew)* -1deg)); */
+    font-weight: 700;
+    color: #fff;
+    /* text-transform: uppercase; */
+    text-align: right;
+    /* border: 3px solid var(--boxshadow); */
+    border-left: 0;
+    /* text-shadow: var(--textshadow) 0px 0px 0px,
+      var(--textshadow) 0.669131px 0.743145px 0px,
+      var(--textshadow) 1.33826px 1.48629px 0px,
+      var(--textshadow) 2.00739px 2.22943px 0px,
+      var(--textshadow) 2.67652px 2.97258px 0px,
+      var(--textshadow) 3.34565px 3.71572px 0px,
+      var(--textshadow) 4.01478px 4.45887px 0px,
+      var(--textshadow) 4.68391px 5.20201px 0px;
+    box-shadow: var(--border) 0px 0px 0px,
+      var(--boxshadow) 0.819152px 0.573576px 0px,
+      var(--boxshadow) 1.6383px 1.14715px 0px,
+      var(--boxshadow) 2.45746px 1.72073px 0px,
+      var(--boxshadow) 3.27661px 2.29431px 0px,
+      var(--boxshadow) 4.09576px 2.86788px 0px,
+      var(--boxshadow) 4.91491px 3.44146px 0px,
+      var(--boxshadow) 5.73406px 4.01504px 0px,
+      var(--boxshadow) 6.55322px 4.58861px 0px,
+      var(--boxshadow) 7.37237px 5.16219px 0px,
+      var(--boxshadow) 8.19152px 5.73576px 0px,
+      var(--boxshadow) 9.01067px 6.30934px 0px,
+      var(--boxshadow) 9.82982px 6.88292px 0px,
+      var(--boxshadow) 10.649px 7.45649px 0px,
+      var(--boxshadow) 11.4681px 8.03007px 0px; */
+
+    &:last-child {
+        left: calc(var(--size) * -1vmin);
+        position: relative;
+        text-align: center;
+        /* span {
+          border-top: 1px solid;
+        } */
+    }
+}
+
+.noisy {
+    background-image: var(--noise-image);
+}
