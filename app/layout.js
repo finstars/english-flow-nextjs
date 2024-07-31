@@ -65,6 +65,7 @@ export default async function RootLayout({ children }) {
         {children}
 
         <footer>
+          <img src="/london.svg" alt="English Flow - London" />
           <div className="footer-inner">
             <h4>English Flow</h4>
             <div className={"footer-links"}>

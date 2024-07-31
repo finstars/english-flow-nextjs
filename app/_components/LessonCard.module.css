@@ -26,6 +26,10 @@
     opacity: 0.7
 }
 
+.content > * {
+    width: 100%;
+}
+
 .card {
     position: relative;
     background: #fff;
@@ -71,4 +75,80 @@
     height: 6px;
     width: 33%;
     border-radius: 0 0 0 5px;
+}
+
+.title {
+    font-size: 12px;
+    background: #f0b624;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: auto;
+    padding: 5px 10px;
+    border-radius: 100px;
+    margin-top: -10px;
+    white-space: nowrap;
+}
+.conversation {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.conversation div {
+    display: table;
+    text-align: left;
+    font-size: 14px;
+    margin: 5px 0;
+    padding: 2px 0;
+}
+.conversation div:nth-child(odd) {
+    border-bottom: 2px solid var(--primary-color);
+}
+.conversation div:nth-child(odd):before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color);
+    border-radius: 100px;
+    margin-right: 5px;
+}
+
+.conversation div:nth-child(even) {
+    border-bottom: 2px solid #f0b624;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.conversation div:nth-child(even):before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #f0b624;
+    border-radius: 100px;
+    margin-right: 5px;
+}
+
+.conversationTranslated {
+    /* font-size: 12px; */
+    text-align: left;
+    font-size: 10px;
+    text-align: left;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.conversationTranslated div:nth-child(even) {
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.contentTprs {
+    text-align: left;
+}
+
+.contentTprs h1 {
+    font-size: 20px;
 }

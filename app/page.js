@@ -28,7 +28,7 @@ export default function Home() {
           </div>
 
 
-          <h2 style={{ color: "#FFC107" }}>3 Types of English Lessons</h2>
+          <h2 style={{ marginTop: "120px" }}>3 Types of English Lessons</h2>
 
           <div className={styles.types}>
             <div className={styles.type}>
