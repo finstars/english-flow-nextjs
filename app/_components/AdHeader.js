@@ -13,14 +13,12 @@ const AdHeader = () => {
     }, []);
 
     return (
-        <ins
-            className="adsbygoogle adbanner-customize"
-            style={{
-                display: "block"
-            }}
+        <ins className="adsbygoogle"
+            style={{display: "block"}}
             data-ad-client="ca-pub-4920440112171788"
             data-ad-slot="2989001394"
-        />
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
     );
 }
 

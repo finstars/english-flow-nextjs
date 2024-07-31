@@ -77,6 +77,8 @@ export default async function RootLayout({ children }) {
           </div>
         </footer>
       </body>
+
+      <Script async crossOrigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4920440112171788" />
     </html>
   );
 }
