@@ -22,6 +22,10 @@ export default async function Home({ params }) {
   const prevHref = isFirst ? null : `/shadowing-technique-english-lessons/${slug}/${parseInt(card) === 1 ? 1 : parseInt(card) - 1}#lesson`
   const nextHref = isLast ? null : `/shadowing-technique-english-lessons/${slug}/${parseInt(card) + 1}#lesson`
 
+  const markAsCompleted = () => {
+    
+  }
+
   return (
     <main id="lesson" className={styles.main}>
       <Link className={styles.goBack} href="/shadowing-technique-english-lessons">
