@@ -22,6 +22,8 @@ export default async function RootLayout({ children }) {
   return (
     <html lang={"en"}>
       <body className={noto.className}>
+        <Script strategy="worker" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4920440112171788" />
+
         {/* <GoogleAdSense publisherId="pub-4920440112171788" /> */}
 
         <header>
@@ -37,7 +39,13 @@ export default async function RootLayout({ children }) {
             </Link>
 
             <div className="ad">
-              <AdHeader />
+              <ins className="adsbygoogle"
+                style={{ display: "block" }}
+                data-ad-client="ca-pub-4920440112171788"
+                data-ad-slot="2989001394"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+              <Script id="banner-ad">{`(adsbygoogle = window.adsbygoogle || []).push({ });`}</Script>
             </div>
           </div>
         </header>
@@ -73,8 +81,6 @@ export default async function RootLayout({ children }) {
           </div>
         </footer>
       </body>
-
-      <Script async crossOrigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4920440112171788" />
     </html>
   );
 }
