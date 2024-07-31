@@ -49,11 +49,14 @@
 .translation {
     position: absolute;
     bottom: 20px;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 500;
     left: 0;
     right: 0;
     margin: auto;
+    background: rgba(0, 0, 0, 0.2);
+    display: table;
+    padding: 3px 6px;
 }
 
 .lightning {

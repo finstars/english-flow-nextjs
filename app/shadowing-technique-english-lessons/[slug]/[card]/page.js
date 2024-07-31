@@ -40,7 +40,7 @@ export default async function Home({ params }) {
       </Link>
 
       <div className={styles.intro}>
-        <h1>{slug.replace("-", " ")} ({data.lesson.length})</h1>
+        <h1>{slug.replace("-", " ")} ({card}/{data.lesson.length})</h1>
 
         <MarkCompleted disabled={!isLast} path={path} />
       </div>

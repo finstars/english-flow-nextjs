@@ -17,6 +17,8 @@ export default async function RootLayout({ children }) {
   const headersList = headers();
   const pathname = headersList.get("x-pathname") || ""
 
+  console.log(pathname, 'pathname')
+
   return (
     <html lang={"en"}>
       <body className={noto.className}>
