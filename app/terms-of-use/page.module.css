@@ -1,0 +1,28 @@
+.main {
+  max-width: 600px;
+  margin: auto;
+  padding: 50px 0 100px 0;
+}
+
+.main h1 {
+  margin-bottom: 25px;
+}
+
+.main h2 {
+  margin: 25px 0 10px 0;
+}
+
+.main ul {
+  padding: 10px 50px;
+}
+
+.main li {
+  padding: 10px 0;
+}
+
+.main a {
+  text-decoration: underline;
+  text-decoration-thickness: max(1px, .0625rem);
+  text-underline-offset: .1578em;
+  font-weight: 500;
+}

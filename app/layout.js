@@ -22,9 +22,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang={"en"}>
       <body className={noto.className}>
-        <Script strategy="lazyOnload" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4920440112171788" />
-
-        {/* <GoogleAdSense publisherId="pub-4920440112171788" /> */}
+        {/* <Script strategy="lazyOnload" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4920440112171788" /> */}
 
         <header>
           <div className="logo-ad">
@@ -39,13 +37,13 @@ export default async function RootLayout({ children }) {
             </Link>
 
             <div className="ad">
-              <ins className="adsbygoogle"
-                style={{ display: "block" }}
+              {/* <ins className="adsbygoogle"
+                style={{ display: "block", width: "729px", height: "90px" }}
                 data-ad-client="ca-pub-4920440112171788"
                 data-ad-slot="2989001394"
                 data-ad-format="auto"
                 data-full-width-responsive="true"></ins>
-              <Script id="banner-ad">{`(adsbygoogle = window.adsbygoogle || []).push({ });`}</Script>
+              <Script id="banner-ad">{`(adsbygoogle = window.adsbygoogle || []).push({ });`}</Script> */}
             </div>
           </div>
         </header>
@@ -74,10 +72,10 @@ export default async function RootLayout({ children }) {
               <Link href="/">Basic Grammar: Tenses</Link>
               <Link href="/">Basic Grammar: Common phrases</Link>
               <Link href="/">Basic Grammar: Vocabulary</Link> */}
-              <Link href="/">Privacy Policy</Link>
-              <Link href="/">Terms of use</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link href="/terms-of-use">Terms of use</Link>
             </div>
-            <div className={'footer-note'}>Copyright © 2024 English Flow.</div>
+            <div className={'footer-note'}>Copyright © 2024 English Flow.<br />With <span className="em em-heart" /> From London.</div>
           </div>
         </footer>
       </body>

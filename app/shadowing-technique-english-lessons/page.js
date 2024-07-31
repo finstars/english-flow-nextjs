@@ -9,7 +9,7 @@ export default async function Home() {
   return (
     <main id="main" className={styles.main}>
       <div className={styles.intro}>
-        <h1>Shadowing Lessons</h1>
+        <h1>Shadowing English Lessons</h1>
         <p>Practice English using the shadowing technique.</p>
         <p>Recommended for beginners (A1-A2).</p>
       </div>

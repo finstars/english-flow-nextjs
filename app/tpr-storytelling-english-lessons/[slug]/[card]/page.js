@@ -20,13 +20,13 @@ export default async function Home({ params }) {
   const isLast = !!!data.lesson[parseInt(card)]
   const isFirst = card == '1'
 
-  const path = `/shadowing-technique-english-lessons/${slug}`
+  const path = `/tpr-storytelling-english-lessons/${slug}`
   const prevHref = isFirst ? null : `${path}/${parseInt(card) === 1 ? 1 : parseInt(card) - 1}#lesson`
   const nextHref = isLast ? null : `${path}/${parseInt(card) + 1}#lesson`
 
   return (
     <main id="lesson" className={styles.main}>
-      <Link className={styles.goBack} href="/shadowing-technique-english-lessons">
+      <Link className={styles.goBack} href="/tpr-storytelling-english-lessons">
         <svg fill="#000000" height="800px" width="800px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.676 26.676" xmlSpace="preserve">
           <g>
             <path d="M26.105,21.891c-0.229,0-0.439-0.131-0.529-0.346l0,0c-0.066-0.156-1.716-3.857-7.885-4.59

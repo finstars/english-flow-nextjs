@@ -256,6 +256,7 @@ footer {
   width: 1300px;
   margin: auto;
   padding: 20px;
+  text-align: center;
 }
 
 .footer-inner h4 {
@@ -265,7 +266,7 @@ footer {
 
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   row-gap: 20px;
   display: inline-grid;
@@ -281,6 +282,7 @@ footer {
 .footer-note {
   margin-top: 30px;
   font-size: 12px;
+  line-height: 22px;
 }
 
 @media (max-width: 1380px) {}

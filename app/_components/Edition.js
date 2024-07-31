@@ -40,17 +40,18 @@ const Edition = ({ title, lessons }) => {
               const isCompleted = completed.includes(path)
 
               return (
-                <Lesson key={i} title={title} translation={translation} backgroundImage={backgroundImage} path={path} isCompleted={isCompleted} />
+                <Lesson key={`${title}-${i}`} title={title} translation={translation} backgroundImage={backgroundImage} path={path} isCompleted={isCompleted} />
               )
             })}
           </div>
 
           <div className={styles.groupAd}>
-            <ins className="adsbygoogle"
+            <div className={styles.empty} />
+            {/* <ins className="adsbygoogle"
               data-ad-client="ca-pub-4920440112171788"
               data-ad-slot="5676672665"
               data-ad-format="auto"
-              data-full-width-responsive="true"></ins>
+              data-full-width-responsive="true"></ins> */}
           </div>
         </div>
       )}

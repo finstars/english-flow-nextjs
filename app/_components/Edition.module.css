@@ -34,6 +34,19 @@
     width: 15px;
 }
 
+.groupAd {
+  /* width: 400px; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.groupAd .empty {
+  width: 160px;
+  height: 600px;
+  background: #d3d3d3;
+}
+
 .groupTitle span {
     background: #0b0c0c;
     color: #fff;
