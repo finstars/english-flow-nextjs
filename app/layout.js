@@ -3,6 +3,7 @@ import "./globals.css";
 import Link from "next/link";
 import { headers } from "next/headers";
 import Translations from "./_components/Translations";
+import Script from "next/script";
 
 const noto = Noto_Sans({ variable: [400, 500, 600, 700, 800, 900], subsets: ["latin"] })
 
@@ -16,8 +17,6 @@ export const metadata = {
 export default async function RootLayout({ children }) {
   const headersList = headers();
   const pathname = headersList.get("x-pathname") || ""
-
-  console.log(pathname, 'pathname')
 
   return (
     <html lang={"en"}>
@@ -34,7 +33,24 @@ export default async function RootLayout({ children }) {
               </span>
             </Link>
 
-            <div className="ad"></div>
+            <div className="ad">
+              <Script
+                async
+                src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4920440112171788`}
+                crossOrigin="anonymous"
+                strategy="afterInteractive"
+              />
+
+              <ins className="adsbygoogle"
+                data-ad-client="ca-pub-4920440112171788"
+                data-ad-slot="2989001394"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+
+              <Script>
+                (adsbygoogle = window.adsbygoogle || []).push({ });
+              </Script>
+            </div>
           </div>
         </header>
 

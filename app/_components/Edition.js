@@ -46,7 +46,11 @@ const Edition = ({ title, lessons }) => {
           </div>
 
           <div className={styles.groupAd}>
-            <img src="/ad-vertical.png" />
+            <ins className="adsbygoogle"
+              data-ad-client="ca-pub-4920440112171788"
+              data-ad-slot="5676672665"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
           </div>
         </div>
       )}
