@@ -22,7 +22,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang={"en"}>
       <body className={noto.className}>
-        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4920440112171788" />
+        <Script strategy="lazyOnload" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4920440112171788" />
 
         {/* <GoogleAdSense publisherId="pub-4920440112171788" /> */}
 
