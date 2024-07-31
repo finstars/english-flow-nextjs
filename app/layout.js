@@ -3,7 +3,9 @@ import "./globals.css";
 import Link from "next/link";
 import { headers } from "next/headers";
 import Translations from "./_components/Translations";
+import AdHeader from "./_components/AdHeader";
 import Script from "next/script";
+import Head from "next/head";
 
 const noto = Noto_Sans({ variable: [400, 500, 600, 700, 800, 900], subsets: ["latin"] })
 
@@ -20,7 +22,12 @@ export default async function RootLayout({ children }) {
 
   return (
     <html lang={"en"}>
+      <Head>
+        <Script async crossOrigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4920440112171788" />
+      </Head>
       <body className={noto.className}>
+        {/* <GoogleAdSense publisherId="pub-4920440112171788" /> */}
+
         <header>
           <div className="logo-ad">
             <Link className="logo" href="/">
@@ -34,22 +41,7 @@ export default async function RootLayout({ children }) {
             </Link>
 
             <div className="ad">
-              <Script
-                async
-                src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4920440112171788`}
-                crossOrigin="anonymous"
-                strategy="afterInteractive"
-              />
-
-              <ins className="adsbygoogle"
-                data-ad-client="ca-pub-4920440112171788"
-                data-ad-slot="2989001394"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-
-              <Script>
-                (adsbygoogle = window.adsbygoogle || []).push({ });
-              </Script>
+              <AdHeader />
             </div>
           </div>
         </header>
