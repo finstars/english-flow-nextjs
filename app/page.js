@@ -46,7 +46,7 @@ export default function Home() {
               <h5>Intermediate</h5>
               <h2>Conversational English</h2>
               <p>Imitate the way you would have a real English conversation in the real world.</p>
-              <Link href={"/shadowing-technique-english-lessons"}>All Conversational Lessons</Link>
+              <Link href={"/conversational-english-lessons"}>All Conversational Lessons</Link>
             </div>
 
             <div className={styles.type}>
@@ -55,7 +55,7 @@ export default function Home() {
               <h5>Advanced</h5>
               <h2>TPR Storytelling</h2>
               <p>Listen to more complex stories and then retell the story in your own words.</p>
-              <Link href={"/shadowing-technique-english-lessons"}>All TPRS Lessons</Link>
+              <Link href={"/tpr-storytelling-english-lessons"}>All TPRS Lessons</Link>
             </div>
           </div>
         </div>
