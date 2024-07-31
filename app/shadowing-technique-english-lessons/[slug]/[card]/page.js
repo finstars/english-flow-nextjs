@@ -4,6 +4,7 @@ import Link from "next/link";
 import LessonCard from "@/app/_components/LessonCard";
 import { storageUrl } from "@/app/_utils/constants";
 import Play from "@/app/_components/Play";
+import MarkCompleted from "@/app/_components/MarkCompleted";
 
 export default async function Home({ params }) {
   const { slug, card } = params
@@ -19,12 +20,9 @@ export default async function Home({ params }) {
   const isLast = !!!data.lesson[parseInt(card)]
   const isFirst = card == '1'
 
-  const prevHref = isFirst ? null : `/shadowing-technique-english-lessons/${slug}/${parseInt(card) === 1 ? 1 : parseInt(card) - 1}#lesson`
-  const nextHref = isLast ? null : `/shadowing-technique-english-lessons/${slug}/${parseInt(card) + 1}#lesson`
-
-  const markAsCompleted = () => {
-    
-  }
+  const path = `/shadowing-technique-english-lessons/${slug}`
+  const prevHref = isFirst ? null : `${path}/${parseInt(card) === 1 ? 1 : parseInt(card) - 1}#lesson`
+  const nextHref = isLast ? null : `${path}/${parseInt(card) + 1}#lesson`
 
   return (
     <main id="lesson" className={styles.main}>
@@ -42,15 +40,9 @@ export default async function Home({ params }) {
       </Link>
 
       <div className={styles.intro}>
-        <h1>{slug.replace("-", " ")}</h1>
+        <h1>{slug.replace("-", " ")} ({data.lesson.length})</h1>
 
-        <button disabled={!isLast} className={styles.markAsCompleted}>
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 256 256" enableBackground="new 0 0 256 256" xmlSpace="preserve">
-            <path fill="#38a438" d="M126.5,10C62.8,10,10,62.8,10,129.5C10,193.2,62.8,246,126.5,246c66.6,0,119.5-52.8,119.5-116.5 C246,62.8,193.2,10,126.5,10z M193.8,93.3l-83.9,82.6c-0.5,0.5-1.3,0.5-1.8,0l-38.7-40c-0.5-0.5-0.5-1.4-0.1-1.9l5.3-7.2 c0.4-0.6,1.2-0.7,1.7-0.3c0,0,0,0,0,0l31.6,24.2c0.6,0.4,1.4,0.4,2,0l76.9-64.1c0.6-0.4,1.3-0.4,1.9,0.1l5,5 C194.3,92,194.3,92.8,193.8,93.3C193.8,93.3,193.8,93.3,193.8,93.3L193.8,93.3z" />
-          </svg>
-
-          Mark as completed
-        </button>
+        <MarkCompleted disabled={!isLast} path={path} />
       </div>
 
       <div className={styles.lessonAds}>

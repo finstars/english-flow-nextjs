@@ -7,13 +7,13 @@ import styles from "./Edition.module.css"
 const Edition = ({ title, lessons }) => {
   const [collapsed, setCollapsed] = useState(false)
   const [locale, setLocale] = useState(null)
+  const [completed, setCompleted] = useState([])
 
   useEffect(() => {
     const localLocale = window.localStorage.getItem('locale')
-
-    if (localLocale) {
-      setLocale(localLocale)
-    }
+    if (localLocale) setLocale(localLocale)
+    const localCompleted = window.localStorage.getItem("completed")
+    if (localCompleted) setCompleted(localCompleted.split(","))
   }, [])
 
   return (
@@ -37,9 +37,10 @@ const Edition = ({ title, lessons }) => {
           <div className={styles.groupVideoLessons}>
             {lessons.map(({ backgroundImage, title, path, translations }, i) => {
               const translation = translations[locale]
+              const isCompleted = completed.includes(path)
 
               return (
-                <Lesson key={i} title={title} translation={translation} backgroundImage={backgroundImage} path={path} />
+                <Lesson key={i} title={title} translation={translation} backgroundImage={backgroundImage} path={path} isCompleted={isCompleted} />
               )
             })}
           </div>
