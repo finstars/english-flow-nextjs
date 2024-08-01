@@ -189,7 +189,7 @@ header {
   position: relative;
   width: 728px;
   height: 90px;
-  background: #d3d3d3;
+  /* background: #d3d3d3; */
   /* background: url(/ad-horizontal.png); */
   background-position: center;
   background-size: cover;

@@ -46,7 +46,7 @@ const Edition = ({ title, lessons }) => {
           </div>
 
           <div className={styles.groupAd}>
-            <div className={styles.empty} />
+            {/* <div className={styles.empty} /> */}
             {/* <ins className="adsbygoogle"
               data-ad-client="ca-pub-4920440112171788"
               data-ad-slot="5676672665"

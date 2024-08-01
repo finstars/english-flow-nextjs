@@ -1,10 +1,13 @@
 "use client"
 
 import React, { useEffect } from "react";
+// import { useRouter } from 'next/navigation'
 import styles from "./MarkCompleted.module.css"
 
 const MarkCompleted = ({ disabled, path }) => {
     const [isCompleted, setIsCompleted] = React.useState(false)
+
+    // const router = useRouter();
 
     useEffect(() => {
         const localCompleted = window.localStorage.getItem("completed") || ""
@@ -19,6 +22,8 @@ const MarkCompleted = ({ disabled, path }) => {
         const localCompleted = window.localStorage.getItem("completed") || ""
         const completed = localCompleted.split(",")
         window.localStorage.setItem("completed", [...completed, path])
+
+        setIsCompleted(true)
     }
 
     if (isCompleted) {

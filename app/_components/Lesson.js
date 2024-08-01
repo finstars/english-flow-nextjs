@@ -12,11 +12,11 @@ const Lesson = ({ backgroundImage, title, path, translation, isCompleted }) => (
       </span>
     </span>
 
-    {translation &&
+    {/* {translation &&
       <span className={styles.translation}>
         {translation}
       </span>
-    }
+    } */}
 
     {isCompleted &&
       <div className={styles.lessonCompleted}>

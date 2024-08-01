@@ -23,7 +23,7 @@ const LessonCard = ({ card, width, type }) => {
             <div className={styles.title}>{card.title}</div>
             <div className={styles.conversation}>
               {card.conversation.map((c, i) => (
-                <div>{c.text}</div>
+                <div key={i}>{c.text}</div>
               ))}
             </div>
 
@@ -31,7 +31,7 @@ const LessonCard = ({ card, width, type }) => {
               <div className={styles.ctDrop}>
                 <div className={styles.conversationTranslated}>
                   {card.conversation.map((c, i) => (
-                    <div>{c.translations[translations]}</div>
+                    <div key={i}>{c.translations[translations]}</div>
                   ))}
                 </div>
               </div>

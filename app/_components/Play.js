@@ -1,18 +1,30 @@
 "use client"
 
-import React from "react";
+import React, { useRef } from "react";
 import { useAudioPlayer } from "react-use-audio-player";
 import styles from "./Play.module.css"
 import { useRouter } from 'next/navigation'
 
 const Play = ({ audio, prevHref, nextHref }) => {
     const [isPulsing, setIsPulsing] = React.useState(false);
+    const [audioUrl, setAudioUrl] = React.useState(null);
 
     const { load } = useAudioPlayer();
     const router = useRouter();
 
     React.useEffect(() => {
-        cacheMp3File(audio)
+        const accent = window.localStorage.getItem('accent') || "American"
+        const gender = window.localStorage.getItem('gender') || "Male"
+        
+        const audioArray = audio.split("/")
+
+        audioArray[audioArray.length - 1] = `${accent}-${gender}-${audioArray[audioArray.length - 1]}`
+
+        const newAudioUrl = audioArray.join("/").replace("lessons//", "lessons/")
+
+        setAudioUrl(newAudioUrl)
+
+        cacheMp3File(newAudioUrl)
     }, []);
 
     React.useEffect(() => {
@@ -21,7 +33,7 @@ const Play = ({ audio, prevHref, nextHref }) => {
                 router.push(prevHref);
             } else if (event.key === 'ArrowRight' && nextHref) {
                 router.push(nextHref);
-            } else if (event.key === ' ' && audio) {
+            } else if (event.key === ' ' && audioUrl) {
                 play();
                 event.preventDefault()
             }
@@ -34,8 +46,8 @@ const Play = ({ audio, prevHref, nextHref }) => {
     }, [prevHref, nextHref, router]);
 
     const play = () => {
-        if (audio) {
-            load(audio, {
+        if (audioUrl) {
+            load(audioUrl, {
                 autoplay: true,
                 html5: true,
                 format: "mp3"
@@ -44,6 +56,10 @@ const Play = ({ audio, prevHref, nextHref }) => {
             setIsPulsing(true);
             setTimeout(() => setIsPulsing(false), 1000);
         }
+    }
+
+    if (!audioUrl) {
+        return <span />
     }
 
     return (

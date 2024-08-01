@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Edition from "../_components/Edition";
 import { storageUrl } from "../_utils/constants";
+import Preferences from "../_components/Preferences";
 
 export default async function Home() {
   const { edition } = await getData()
@@ -13,6 +14,8 @@ export default async function Home() {
         <p>Practice English using the shadowing technique.</p>
         <p>Recommended for beginners (A1-A2).</p>
       </div>
+
+      <Preferences />
 
       <div className={styles.videoLessons}>
         {edition.map(({ title, lessons }, i) => (

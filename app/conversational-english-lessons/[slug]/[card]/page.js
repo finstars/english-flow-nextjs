@@ -49,7 +49,7 @@ export default async function Home({ params }) {
 
       <div className={styles.lessonAds}>
         <div className={styles.lessonAd}>
-          <div className={styles.empty} />
+          {/* <div className={styles.empty} /> */}
           {/* <ins className="adsbygoogle"
             data-ad-client="ca-pub-4920440112171788"
             data-ad-slot="3184442513"
@@ -90,7 +90,7 @@ c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716
         </div>
 
         <div className={styles.lessonAd}>
-          <div className={styles.empty} />
+          {/* <div className={styles.empty} /> */}
           {/* <ins className="adsbygoogle"
             data-ad-client="ca-pub-4920440112171788"
             data-ad-slot="5676672665"

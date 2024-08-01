@@ -34,9 +34,9 @@ const Preferences = () => {
         <div className={styles.preferenceOptions}>
           <button onClick={() => handleAccent("American")} className={accent == 'American' ? styles.active : ''}><span className="em em-flag-us" /> American</button>
           <button onClick={() => handleAccent("British")} className={accent == 'British' ? styles.active : ''}><span className="em em-flag-gb" /> British</button>
-          <button onClick={() => handleAccent("Canadian")} className={accent == 'Canadian' ? styles.active : ''}><span className="em em-flag-ca" /> Canadian</button>
+          {/* <button onClick={() => handleAccent("Canadian")} className={accent == 'Canadian' ? styles.active : ''}><span className="em em-flag-ca" /> Canadian</button>
           <button onClick={() => handleAccent("Australian")} className={accent == 'Australian' ? styles.active : ''}><span className="em em-flag-au" /> Australian</button>
-          <button onClick={() => handleAccent("Irish")} className={accent == 'Irish' ? styles.active : ''}><span className="em em-flag-ir" /> Irish</button>
+          <button onClick={() => handleAccent("Irish")} className={accent == 'Irish' ? styles.active : ''}><span className="em em-flag-ir" /> Irish</button> */}
         </div>
       </div>
 
