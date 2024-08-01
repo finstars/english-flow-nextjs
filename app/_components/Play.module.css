@@ -52,3 +52,9 @@
 .pulse {
     animation: pulse .3s ease;
 }
+
+.play svg {
+    position: relative;
+    right: -3px;
+    bottom: -1px;
+}
