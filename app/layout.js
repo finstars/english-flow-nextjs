@@ -22,6 +22,13 @@ export default async function RootLayout({ children }) {
 
   return (
     <html lang={"en"}>
+      <head>
+        <meta property="og:image" content="https://www.englishflow.ai/intro2.jpg" />
+        <meta property="og:image:alt" content="English Flow - Learn English with AI for Free" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="870" />
+        <meta property="og:image:height" content="324" />
+      </head>
       <body className={noto.className}>
       <Script strategy="lazyOnload" async src="https://www.googletagmanager.com/gtag/js?id=G-6572YH926J" />
       <Script>{`window.dataLayer = window.dataLayer || [];

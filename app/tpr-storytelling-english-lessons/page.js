@@ -4,6 +4,11 @@ import Edition from "../_components/Edition";
 import { storageUrl } from "../_utils/constants";
 import Preferences from "../_components/Preferences";
 
+export const metadata = {
+  title: 'TPR Storytelling English Lessons',
+  description: 'Practice English using TPR & TPRS methodology. Recommended for advanced (C1-C2).',
+}
+
 export default async function Home() {
   const { edition } = await getData()
 

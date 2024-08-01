@@ -6,6 +6,19 @@ import { storageUrl } from "@/app/_utils/constants";
 import Play from "@/app/_components/Play";
 import MarkCompleted from "@/app/_components/MarkCompleted";
 
+const slugToTitle = slug => slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+export async function generateMetadata({ params }) {
+  const { slug, card } = params
+ 
+  const title = slugToTitle(slug)
+  
+  return {
+    title: `Shadowing English: ${title} - Step ${card}`,
+    description: `Practice English using the shadowing technique.`
+  }
+}
+
 export default async function Home({ params }) {
   const { slug, card } = params
 

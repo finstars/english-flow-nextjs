@@ -4,6 +4,11 @@ import Edition from "../_components/Edition";
 import { storageUrl } from "../_utils/constants";
 import Preferences from "../_components/Preferences";
 
+export const metadata = {
+  title: 'Shadowing English Lessons',
+  description: 'Practice English using the shadowing technique. Recommended for beginners (A1-A2).',
+}
+
 export default async function Home() {
   const { edition } = await getData()
 

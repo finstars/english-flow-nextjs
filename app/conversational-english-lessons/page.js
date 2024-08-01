@@ -4,6 +4,11 @@ import Edition from "../_components/Edition";
 import { storageUrl } from "../_utils/constants";
 import Preferences from "../_components/Preferences";
 
+export const metadata = {
+  title: 'Conversational English Lessons',
+  description: 'Practice English using real-life English conversations. Recommended for intermediate (B1-B2).',
+}
+
 export default async function Home() {
   const { edition } = await getData()
 

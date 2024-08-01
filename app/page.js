@@ -4,6 +4,11 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import { languages } from "./_utils/constants";
 
+export const metadata = {
+  title: 'Master English by Yourself',
+  description: '3 types of self-paced English lessons. Highly effective for absorbing the flow of English.',
+}
+
 export default function Home() {
   return (
     <main id="main" className={styles.main}>
