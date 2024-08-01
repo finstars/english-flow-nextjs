@@ -2,10 +2,7 @@
     margin: 0 auto;
     opacity: 1;
     transition: ease-in-out 1s;
-    display: flex!important;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
     width: 100%;
     height: 100%;
     position: relative;
@@ -15,21 +12,25 @@
 }
 
 .content h1 {
-    height: 70%;
+    height: 100%;
+    display: flex;
     align-content: center;
     flex: 1;
+    padding-bottom: 50px;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content p {
-    height: 30%;
-    align-content: center;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
     opacity: 0.6;
-    padding-top: 15px;
 }
 
-.content > * {
+.content>* {
     width: 100%;
 }
 
@@ -81,7 +82,7 @@
 }
 
 .title {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     font-size: 12px;
     background: #f0b624;
     color: #000;
@@ -90,15 +91,24 @@
     width: auto;
     padding: 5px 10px;
     border-radius: 100px;
-    margin-top: -10px;
+    /* margin-top: -10px; */
     white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
 }
+
 .conversation {
     flex: 1;
     align-items: center;
     justify-content: center;
     align-content: center;
+    padding: 40px 0 60px 0;
 }
+
 .conversation div {
     display: table;
     text-align: left;
@@ -106,9 +116,11 @@
     margin: 5px 0;
     padding: 2px 0;
 }
+
 .conversation div:nth-child(odd) {
     border-bottom: 2px solid var(--primary-color);
 }
+
 .conversation div:nth-child(odd):before {
     content: '';
     display: inline-block;
@@ -138,7 +150,7 @@
 .conversationTranslated {
     /* font-size: 12px; */
     text-align: left;
-    font-size: 10px;
+    font-size: 12px;
     text-align: left;
     font-weight: 500;
     opacity: 0.6;
@@ -155,4 +167,50 @@
 
 .contentTprs h1 {
     font-size: 20px;
+}
+
+.ct {
+    position: relative;
+    z-index: 2;
+}
+
+.ctDrop {
+    background: rgb(239 239 239);
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+    position: absolute;
+    bottom: 60px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    z-index: 9999;
+    /* display: none; */
+}
+
+.ctToggle {
+    margin-bottom: 15px;
+    font-size: 12px;
+    background: rgb(239 239 239);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: auto;
+    padding: 7px 10px;
+    border-radius: 100px;
+    margin-top: -10px;
+    white-space: nowrap;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    bottom: 40px;
+    margin: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.ctToggle svg {
+    width: 18px;
+    height: 18px;
 }
