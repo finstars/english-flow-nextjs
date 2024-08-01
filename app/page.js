@@ -10,7 +10,7 @@ export default function Home() {
       <div className={styles.hero}>
         <div className={styles.inner}>
           <img src="/intro2.jpg" alt="English Flow - Learn spoken English by yourself" />
-          <h1>Learn spoken English by yourself</h1>
+          <h1>Master English by Yourself</h1>
           <h3>3 types of self-paced English lessons.</h3>
           <h3>Highly effective for absorbing the flow of English.</h3>
 
@@ -54,7 +54,7 @@ export default function Home() {
 
               <h5>Advanced</h5>
               <h2>TPR Storytelling</h2>
-              <p>Listen to more complex stories and then retell the story in your own words.</p>
+              <p>Listen to more complex stories and respond to questions using your own words.</p>
               <Link href={"/tpr-storytelling-english-lessons"}>All TPRS Lessons</Link>
             </div>
           </div>

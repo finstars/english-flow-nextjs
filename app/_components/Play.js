@@ -34,8 +34,9 @@ const Play = ({ audio, prevHref, nextHref }) => {
             } else if (event.key === 'ArrowRight' && nextHref) {
                 router.push(nextHref);
             } else if (event.key === ' ' && audioUrl) {
-                play();
                 event.preventDefault()
+                play();
+                return
             }
         };
 

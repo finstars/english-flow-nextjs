@@ -9,8 +9,10 @@ import MarkCompleted from "@/app/_components/MarkCompleted";
 export default async function Home({ params }) {
   const { slug, card } = params
 
-  const lesson = `${storageUrl}/lessons/${slug}/lesson.json`
-  const audio = `${storageUrl}/lessons/${slug}/${card}.mp3`
+  const path = `/shadowing-technique-english-lessons/${slug}`
+
+  const lesson = `${storageUrl}/lessons/${path}/lesson.json`
+  const audio = `${storageUrl}/lessons/${path}/${card}.mp3`
 
   const data = await getData(lesson)
 
@@ -20,7 +22,6 @@ export default async function Home({ params }) {
   const isLast = !!!data.lesson[parseInt(card)]
   const isFirst = card == '1'
 
-  const path = `/shadowing-technique-english-lessons/${slug}`
   const prevHref = isFirst ? null : `${path}/${parseInt(card) === 1 ? 1 : parseInt(card) - 1}#lesson`
   const nextHref = isLast ? null : `${path}/${parseInt(card) + 1}#lesson`
 
