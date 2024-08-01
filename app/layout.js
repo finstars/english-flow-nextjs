@@ -23,6 +23,13 @@ export default async function RootLayout({ children }) {
   return (
     <html lang={"en"}>
       <body className={noto.className}>
+      <Script strategy="lazyOnload" async src="https://www.googletagmanager.com/gtag/js?id=G-6572YH926J" />
+      <Script>{`window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6572YH926J');`}</Script>
+
         {/* <Script strategy="lazyOnload" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4920440112171788" /> */}
 
         <header>
