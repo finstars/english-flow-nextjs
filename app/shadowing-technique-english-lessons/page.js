@@ -24,7 +24,7 @@ export default async function Home() {
 
       <div className={styles.videoLessons}>
         {edition.map(({ title, lessons }, i) => (
-          <Edition title={title} lessons={lessons} key={i} />
+          <Edition title={title} lessons={lessons} key={i} backgroundImage={`linear-gradient(109.6deg, rgb(255, 194, 48) 11.2%, rgb(255, 124, 0) 100.2%)`} />
         ))}
       </div>
     </main>

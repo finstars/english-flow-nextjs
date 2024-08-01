@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Lesson from "./Lesson";
 import styles from "./Edition.module.css"
 
-const Edition = ({ title, lessons }) => {
+const Edition = ({ title, lessons, backgroundImage }) => {
   const [collapsed, setCollapsed] = useState(false)
   const [locale, setLocale] = useState(null)
   const [completed, setCompleted] = useState([])
@@ -35,7 +35,7 @@ const Edition = ({ title, lessons }) => {
       {!collapsed && (
         <div className={styles.groupLessons}>
           <div className={styles.groupVideoLessons}>
-            {lessons.map(({ backgroundImage, title, path, translations }, i) => {
+            {lessons.map(({ title, path, translations }, i) => {
               const translation = translations[locale]
               const isCompleted = completed.includes(path)
 
