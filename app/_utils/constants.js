@@ -8,21 +8,24 @@ export const storageUrl = "https://english-flow-storage.vercel.app"
 export const languages = [
   {
     "name": "Chinese",
-    "codes": ["zh", "zh-CN", "zh-SG", "zh-HK", "zh-TW"]
+    "codes": ["zh", "zh-CN", "zh-SG", "zh-HK", "zh-TW"],
+    "flag": "cn"
   },
   {
     "name": "Spanish",
     "codes": ["es", "es-ES", "es-MX", "es-AR", "es-CO"]
   },
-  {
-    "name": "English",
-    "codes": ["en", "en-GB", "en-US", "en-CA", "en-AU"]
-  },
+  // {
+  //   "name": "English",
+  //   "codes": ["en", "en-GB", "en-US", "en-CA", "en-AU"]
+  // },
   {
     "name": "Hindi",
-    "codes": ["hi", "hi-IN"]
+    "codes": ["hi", "hi-IN"],
+    "flag": "in"
   },
   {
+    "isRtl": true,
     "name": "Arabic",
     "codes": ["ar", "ar-SA", "ar-EG", "ar-DZ", "ar-IQ", "ar-JO", "ar-KW", "ar-LB", "ar-LY", "ar-MA", "ar-OM", "ar-QA", "ar-SY", "ar-TN", "ar-AE", "ar-YE"]
   },
@@ -40,7 +43,8 @@ export const languages = [
   },
   {
     "name": "Japanese",
-    "codes": ["ja", "ja-JP"]
+    "codes": ["ja", "ja-JP"],
+    "flag": "jp"
   },
   {
     "name": "Punjabi",
@@ -52,11 +56,13 @@ export const languages = [
   },
   {
     "name": "Javanese",
-    "codes": ["jv", "jv-ID"]
+    "codes": ["jv", "jv-ID"],
+    "flag": "id"
   },
   {
     "name": "Korean",
-    "codes": ["ko", "ko-KR"]
+    "codes": ["ko", "ko-KR"],
+    "flag": "kr"
   },
   {
     "name": "French",
@@ -64,7 +70,8 @@ export const languages = [
   },
   {
     "name": "Telugu",
-    "codes": ["te", "te-IN"]
+    "codes": ["te", "te-IN"],
+    "flag": "in"
   },
   {
     "name": "Marathi",
@@ -79,12 +86,15 @@ export const languages = [
     "codes": ["vi", "vi-VN"]
   },
   {
+    "isRtl": true,
     "name": "Urdu",
-    "codes": ["ur", "ur-PK", "ur-IN"]
+    "codes": ["ur", "ur-PK", "ur-IN"],
+    "flag": "pk"
   },
   {
     "name": "Filipino",
-    "codes": ["fil", "fil-PH"]
+    "codes": ["fil", "fil-PH"],
+    "flag": "ph"
   },
   {
     "name": "Romanian",
@@ -92,7 +102,8 @@ export const languages = [
   },
   {
     "name": "Albanian",
-    "codes": ["sq", "sq-AL", "sq-MK"]
+    "codes": ["sq", "sq-AL", "sq-MK"],
+    "flag": "al"
   },
   {
     "name": "Nepali",
@@ -111,6 +122,7 @@ export const languages = [
     "codes": ["am", "am-ET"]
   },
   {
+    "isRtl": true,
     "name": "Pashto",
     "codes": ["ps", "ps-AF"]
   },

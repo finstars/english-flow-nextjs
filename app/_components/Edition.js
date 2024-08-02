@@ -10,7 +10,7 @@ const Edition = ({ title, lessons, backgroundImage }) => {
   const [completed, setCompleted] = useState([])
 
   useEffect(() => {
-    const localLocale = window.localStorage.getItem('locale')
+    const localLocale = window.localStorage.getItem('translations')
     if (localLocale) setLocale(localLocale)
     const localCompleted = window.localStorage.getItem("completed")
     if (localCompleted) setCompleted(localCompleted.split(","))

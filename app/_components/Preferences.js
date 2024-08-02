@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useEffect, useState } from "react";
+import { languages } from "../_utils/constants";
 import styles from "./Preferences.module.css"
 
 const Preferences = () => {
@@ -25,6 +26,7 @@ const Preferences = () => {
   const handleTranslations = (value) => {
     setTranslations(value)
     window.localStorage.setItem("translations", value)
+    window.location.reload()
   }
 
   return (
@@ -51,8 +53,14 @@ const Preferences = () => {
       <div className={styles.preference}>
         <h5>Translations:</h5>
         <div className={styles.preferenceOptions}>
-          <button onClick={() => handleTranslations("No")} className={translations == 'No' ? styles.active : ''}><span className="em em-no_entry" /> No</button>
-          <button onClick={() => handleTranslations("Somali")} className={translations == 'Somali' ? styles.active : ''}><span className="em em-flag-so" /> Somali</button>
+          <select value={translations} onChange={e => handleTranslations(e.target.value)}>
+            <option value="">No translations</option>
+            {languages.map((language, i) => (
+              <option key={i}>{language.name}</option>
+            ))}
+          </select>
+          {/* <button onClick={() => handleTranslations("No")} className={translations == 'No' ? styles.active : ''}><span className="em em-no_entry" /> No</button>
+          <button onClick={() => handleTranslations("Somali")} className={translations == 'Somali' ? styles.active : ''}><span className="em em-flag-so" /> Somali</button> */}
         </div>
       </div>
     </div>

@@ -10,7 +10,8 @@
 .preference {
   margin: 5px 0;
 }
-.preferenceOptions button {
+.preferenceOptions button,
+.preferenceOptions select {
   border: none;
   padding: 5px 10px;
   margin: 2px;
@@ -22,6 +23,13 @@
   font-size: 12px;
   position: relative;
   padding-left: 30px;
+  -webkit-appearance: none;
+  outline: none;
+}
+.preferenceOptions select {
+  padding-left: 10px;
+  width: 180px;
+  text-align: center;
 }
 .preferenceOptions button span {
   position: absolute;

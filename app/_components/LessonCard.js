@@ -13,6 +13,8 @@ const LessonCard = ({ card, width, type }) => {
     if (translations) setTranslations(translations)
   }, [])
 
+  const textAlign = translations && ["Arabic", "Urdu", "Pashto"].includes(translations) ? "right" : "left"
+
   return (
     <div className={styles.cards}>
       <div className={styles.card}></div>
@@ -28,7 +30,7 @@ const LessonCard = ({ card, width, type }) => {
             </div>
 
             {showTranslations &&
-              <div className={styles.ctDrop}>
+              <div className={styles.ctDrop} style={{ textAlign }}>
                 <div className={styles.conversationTranslated}>
                   {card.conversation.map((c, i) => (
                     <div key={i}>{c.translations[translations]}</div>
@@ -47,7 +49,7 @@ const LessonCard = ({ card, width, type }) => {
             <h1>{card.text}</h1>
 
             {showTranslations &&
-              <div className={styles.ctDrop}>
+              <div className={styles.ctDrop} style={{ textAlign }}>
                 <p>{card.translations[translations]}</p>
               </div>
             }

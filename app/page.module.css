@@ -103,12 +103,15 @@
   margin: 50px auto;
   /* max-width: 600px; */
   text-align: center;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
-  max-width: 400px;
+  /* max-width: 400px; */
   border-radius: 5px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  width: 100%;
+  padding: 20px 0;
 }
 .translations h4 {
   text-transform: uppercase;
@@ -116,11 +119,15 @@
   /* color: var(--primary-color); */
   letter-spacing: 0.5px;
   /* margin-bottom: 5px; */
+  margin-bottom: 15px;
 }
 .translationsList {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 .translationsList div {
   background-color: rgba(255, 255, 255, 0.2);
@@ -136,4 +143,5 @@
   text-underline-offset: .1578em;
   text-transform: uppercase;
   font-weight: 900;
+  font-size: 14px;
 }

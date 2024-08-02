@@ -26,7 +26,7 @@ export default function Home() {
                 <div key={i}>
                   {lang.name}
 
-                  {lang.name === 'Somali' && <span className="em em-flag-so"></span>}
+                  <span className={`em em-flag-${lang.flag || lang.codes[0]}`}></span>
                 </div>
               ))}
             </div>
