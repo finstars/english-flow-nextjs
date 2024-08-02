@@ -28,6 +28,7 @@ export default async function RootLayout({ children }) {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="870" />
         <meta property="og:image:height" content="324" />
+        <meta name="google-adsense-account" content="ca-pub-4920440112171788" />
       </head>
       <body className={noto.className}>
       <Script strategy="lazyOnload" async src="https://www.googletagmanager.com/gtag/js?id=G-6572YH926J" />
