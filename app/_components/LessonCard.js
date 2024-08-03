@@ -9,8 +9,8 @@ const LessonCard = ({ card, width, type }) => {
   const [translations, setTranslations] = useState("")
 
   useEffect(() => {
-    const translations = window.localStorage.getItem("translations")
-    if (translations) setTranslations(translations)
+    const localTranslations = window.localStorage.getItem("translations")
+    if (localTranslations) setTranslations(localTranslations)
   }, [])
 
   const textAlign = translations && ["Arabic", "Urdu", "Pashto"].includes(translations) ? "right" : "left"
