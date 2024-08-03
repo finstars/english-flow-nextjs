@@ -33,26 +33,15 @@ const Edition = ({ title, lessons, backgroundImage }) => {
         </h5>
       </div>
       {!collapsed && (
-        <div className={styles.groupLessons}>
-          <div className={styles.groupVideoLessons}>
-            {lessons.map(({ title, path, translations }, i) => {
-              const translation = translations[locale]
-              const isCompleted = completed.includes(path)
+        <div className={styles.groupVideoLessons}>
+          {lessons.map(({ title, path, translations }, i) => {
+            const translation = translations[locale]
+            const isCompleted = completed.includes(path)
 
-              return (
-                <Lesson key={`${title}-${i}`} title={title} translation={translation} backgroundImage={backgroundImage} path={path} isCompleted={isCompleted} />
-              )
-            })}
-          </div>
-
-          <div className={styles.groupAd}>
-            {/* <div className={styles.empty} /> */}
-            {/* <ins className="adsbygoogle"
-              data-ad-client="ca-pub-4920440112171788"
-              data-ad-slot="5676672665"
-              data-ad-format="auto"
-              data-full-width-responsive="true"></ins> */}
-          </div>
+            return (
+              <Lesson key={`${title}-${i}`} title={title} translation={translation} backgroundImage={backgroundImage} path={path} isCompleted={isCompleted} />
+            )
+          })}
         </div>
       )}
     </div>

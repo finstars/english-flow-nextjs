@@ -78,6 +78,7 @@
     /* row-gap: 20px; */
     display: inline-grid;
     /* padding-right: 30px; */
+    width: 100%;
 }
 
 @media (max-width: 800px) {

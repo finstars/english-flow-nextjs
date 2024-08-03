@@ -48,5 +48,6 @@
   font-size: 12px;
 }
 @media (max-width: 800px) {
-  
+ .preferences {display: block;} 
+ .preference {margin: 15px 0}
 }

@@ -9,7 +9,7 @@ const Play = ({ audio, prevHref, nextHref }) => {
     const [isPulsing, setIsPulsing] = React.useState(false);
     const [audioUrl, setAudioUrl] = React.useState(null);
 
-    const { load } = useAudioPlayer();
+    const { load, cleanup } = useAudioPlayer();
     const router = useRouter();
 
     React.useEffect(() => {
@@ -43,6 +43,7 @@ const Play = ({ audio, prevHref, nextHref }) => {
         window.addEventListener('keydown', handleKeyDown);
         return () => {
             window.removeEventListener('keydown', handleKeyDown);
+            cleanup()
         };
     }, [prevHref, nextHref, router]);
 

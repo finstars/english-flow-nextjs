@@ -64,6 +64,9 @@
     display: block!important;
     padding: 15px;
   }
+  .translationsList {
+    grid-template-columns: repeat(2, 1fr)!important;
+  }
   .headlineTwo {
     margin-top: 20px;
   }
