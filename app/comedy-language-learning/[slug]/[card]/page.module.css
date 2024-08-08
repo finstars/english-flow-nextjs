@@ -1,0 +1,136 @@
+.main {
+  max-width: 100%;
+  width: 1300px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+}
+
+.goBack {
+  display: flex;
+  position: absolute;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.1);
+  gap: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+}
+
+.goBack svg {
+  height: 15px;
+  width: 15px;
+}
+
+.lessonAds {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.lessonAd {
+
+}
+.lessonAd .empty {
+  width: 160px;
+  height: 600px;
+  background: #d3d3d3;
+}
+.lesson {
+  flex: 1;
+  padding: 0 50px;
+  max-width: 600px;
+  margin: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.intro {
+  padding: 0;
+  text-align: center;
+}
+
+.intro h1 {
+  color: #369e35;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 40px;
+}
+
+.intro p {
+  font-size: 18px;
+}
+
+.inner-container {
+  position: relative;
+  max-width: 20%;
+  min-width: 360px;
+  height: 300px;
+  width: 100%;
+  margin: 0 auto 100px;
+}
+
+.actions {
+  position: relative;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.back,
+.play,
+.next {
+  background: #36a036;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 100px;
+  padding: 20px 0;
+  cursor: pointer;
+  color: #fff;
+  width: 64px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.back {
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+}
+
+.play {
+  background: #f0b624;
+  color: var(--text-color);
+}
+
+.back svg,
+.next svg,
+.play svg {
+  height: 22px;
+  width: 22px;
+}
+
+.back svg {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 800px) {
+  .lessonAds {display: block;padding-top: 0;padding-bottom: 0;}
+  .lesson {
+    padding: 0!important;
+    margin: 10px 0!important;
+  }
+  .lessonAd {display: none;}
+  .intro {
+    margin-top: 60px;
+  }
+  .goBack {
+    padding: 10px;
+  }
+}

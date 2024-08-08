@@ -23,6 +23,10 @@ const Nav = () => {
                 <Link onClick={handleClick} className={pathname.includes("/conversational-english-lessons") ? styles.active : ""} href="/conversational-english-lessons"><span>Lvl 2. Intermediate</span> Conversational</Link>
                 <Link onClick={handleClick} className={pathname.includes("/tpr-storytelling-english-lessons") ? styles.active : ""} href="/tpr-storytelling-english-lessons"><span>Lvl 3. Advanced</span> TPR Storytelling</Link>
 
+
+                {/* <Link onClick={handleClick} className={pathname.includes("/tpr-storytelling-english-lessons") ? styles.active : ""} href="/practice-phrases"><span>All Lvls</span> Phrases</Link> */}
+                <Link onClick={handleClick} className={pathname.includes("/tpr-storytelling-english-lessons") ? styles.active : ""} href="/comedy-language-learning"><span>All Lvls</span> Comedy LL</Link>
+
                 <Link onClick={handleClick} href="https://shop.englishflow.ai">
                     Shop
                     <svg fill="#fff" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.818 194.818" xmlSpace="preserve">

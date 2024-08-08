@@ -1,0 +1,220 @@
+.main {
+  max-width: 100%;
+  width: 1300px;
+  margin: auto;
+  padding: 20px;
+}
+
+.crest {
+  max-width: 100%;
+  width: 1260px;
+  margin: auto;
+  display: flex;
+}
+
+.crestSquare {
+  border-left: 2px solid #0b0c0c;
+  padding: 0 20px 0 20px;
+}
+
+.crestLogo {
+  width: 32px;
+  height: 32px;
+}
+
+.crestTitle {
+  font-weight: 500;
+  color: #0b0c0c;
+  text-decoration: underline;
+  text-decoration-thickness: max(1px, .0625rem);
+  text-underline-offset: .1578em;
+}
+
+.heroBanner {
+  background: #242424;
+  margin: 5px 0 25px 0;
+  padding: 20px;
+  color: #fff;
+}
+
+.heroTitle {
+  margin-bottom: 5px;
+}
+
+.heroSubtitle {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.heroDescription {
+  max-width: 75%;
+  font-weight: 400;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+.tabs {
+  display: flex;
+  gap: 15px;
+  margin: 5px 0 0 0;
+}
+
+.tab {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 0;
+  border: none;
+  background: #e8e8e8;
+  color: #0b0c0c;
+  cursor: pointer;
+}
+
+.tabActive {
+  color: #fff;
+  background: #242424;
+  font-weight: 700;
+}
+
+.tabDetails {
+  padding: 30px 0 20px 0;
+}
+
+.tabDetailsHeadline {
+  margin-bottom: 10px;
+}
+
+.tabDetailsList {
+  padding: 10px 30px;
+}
+
+.tabDetailsListItem {
+  padding: 5px 0;
+}
+
+.videoLessons {
+  padding: 0 0 20px 0;
+}
+
+.intro {
+  padding: 30px 0 15px 0;
+  text-align: center;
+}
+
+.intro h1 {
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 18px;
+}
+
+.group {
+  padding: 40px 0 20px 0;
+  color: #0b0c0c;
+  max-width: 1300px;
+}
+
+.group:first-of-type {
+  padding-top: 10px;
+}
+
+.groupDetails {
+  /* background: #e8e8e8;
+  padding: 20px;
+  margin-bottom: 30px; */
+}
+
+.groupTitle {
+  font-size: 14px;
+  margin: 5px 0 20px 0;
+  border: 1px solid #f2f2f2;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: inherit;
+  font-weight: 500;
+  background: #f6f6f6;
+  padding: 7px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.groupTitle svg {
+  height: 15px;
+  width: 15px;
+}
+
+.groupTitle span {
+  background: #0b0c0c;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  vertical-align: top;
+  margin-left: 10px;
+  position: relative;
+  bottom: -4px;
+}
+
+.groupDescription {
+  max-width: 600px;
+  color: #0b0c0c;
+}
+
+.groupLessons {
+  /* margin-top: 25px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.groupVideoLessons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  /* row-gap: 20px; */
+  display: inline-grid;
+  padding-right: 30px;
+}
+
+.groupLesson {
+  /* width: 300px; */
+  /* height: 250px; */
+  /* background: #000; */
+  background-position: center;
+  background-size: cover;
+  background-position: left;
+  position: relative;
+  font-weight: bold;
+  font-size: 28px;
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.groupLesson:hover {
+  opacity: 0.8
+}
+
+
+
+.ad1 {
+  background: url(/ad-example-square.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.ad2 {
+  background: url(/ad-example-square2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
