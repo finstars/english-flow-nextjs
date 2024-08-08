@@ -1,6 +1,11 @@
 import React from "react";
 import styles from "./page.module.css";
 
+export const metadata = {
+  title: 'Terms of Use',
+  description: 'Operated by 3M DIGITAL LTD. Effective Date: July 31, 2024',
+}
+
 export default function Home() {
   return (
     <main id="main" className={styles.main}>
