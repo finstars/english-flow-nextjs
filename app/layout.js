@@ -36,7 +36,7 @@ export default async function RootLayout({ children }) {
         {/* <Script strategy="lazyOnload" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4920440112171788" /> */}
 
         <header>
-          <div className="logo-ad">
+          <div className="logo-and-ad">
             <Link className="logo" href="/">
               <img src="/logo.svg" alt={metadata.title} />
               <span className="logo-details">
