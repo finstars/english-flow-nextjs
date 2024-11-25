@@ -21,9 +21,11 @@ const Nav = () => {
 
                 <Link onClick={handleClick} className={pathname.includes("/shadowing-technique-english-lessons") ? styles.active : ""} href="/shadowing-technique-english-lessons"><span>80% of English</span> 1-Week Course</Link>
 
-                <Link onClick={handleClick} className={pathname.includes("/shadowing-technique-english-lessons") ? styles.active : ""} href="/shadowing-technique-english-lessons"><span>Lvl 1. Beginner</span> Shadowing</Link>
+                <Link onClick={handleClick} className={pathname.includes("/shadowing-technique-english-lessons") ? styles.active : ""} href="/shadowing-technique-english-lessons"><span>Beginner to Advanced</span> Practice Lessons</Link>
+
+                {/* <Link onClick={handleClick} className={pathname.includes("/shadowing-technique-english-lessons") ? styles.active : ""} href="/shadowing-technique-english-lessons"><span>Lvl 1. Beginner</span> Shadowing</Link>
                 <Link onClick={handleClick} className={pathname.includes("/conversational-english-lessons") ? styles.active : ""} href="/conversational-english-lessons"><span>Lvl 2. Intermediate</span> Conversational</Link>
-                <Link onClick={handleClick} className={pathname.includes("/tpr-storytelling-english-lessons") ? styles.active : ""} href="/tpr-storytelling-english-lessons"><span>Lvl 3. Advanced</span> TPR Storytelling</Link>
+                <Link onClick={handleClick} className={pathname.includes("/tpr-storytelling-english-lessons") ? styles.active : ""} href="/tpr-storytelling-english-lessons"><span>Lvl 3. Advanced</span> TPR Storytelling</Link> */}
 
 
                 {/* <Link onClick={handleClick} className={pathname.includes("/tpr-storytelling-english-lessons") ? styles.active : ""} href="/practice-phrases"><span>All Lvls</span> Phrases</Link> */}
