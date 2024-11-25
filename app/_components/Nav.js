@@ -21,7 +21,7 @@ const Nav = () => {
 
                 <Link onClick={handleClick} className={pathname.includes("/shadowing-technique-english-lessons") ? styles.active : ""} href="/shadowing-technique-english-lessons"><span>Essential English</span> 7-Day Curriculum</Link>
 
-                <Link onClick={handleClick} className={pathname.includes("/shadowing-technique-english-lessons") ? styles.active : ""} href="/shadowing-technique-english-lessons"><span>spoken English</span> Lessons for Practice</Link>
+                <Link onClick={handleClick} className={pathname.includes("/shadowing-technique-english-lessons") ? styles.active : ""} href="/shadowing-technique-english-lessons"><span>Spoken English</span> Short Lessons</Link>
                 
                 <Link onClick={handleClick} className={pathname.includes("/shadowing-technique-english-lessons") ? styles.active : ""} href="/shadowing-technique-english-lessons"><span>Blog</span> Language Learning</Link>
 
